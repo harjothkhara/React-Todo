@@ -94,8 +94,8 @@ class App extends React.Component {
     
   render() {
     return (
-      <div>
-        <Todo task="Organize Garage"/>
+      <div className ="container">
+        <h1>Todo List</h1>
         <TodoList list={this.state.list} toggleItem={this.toggleItem} />
         <TodoForm addTodo={this.addTodo} handleChanges={this.handleChanges}
          name={this.state.task} />
