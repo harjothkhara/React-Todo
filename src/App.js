@@ -75,12 +75,8 @@ class App extends React.Component {
       <div>
         <Todo task="Organize Garage"/>
         <TodoList list={this.state.list} />
-        <TodoForm
-        addTodo={this.addTodo}
-        handleChanges={this.handleChanges}
-        task={this.state.task}
-        id={this.state.id}
-        completed={this.state.completed}
+        <TodoForm addTodo={this.addTodo} handleChanges={this.handleChanges}
+        name={this.state.task}
         />
       </div>
     );
